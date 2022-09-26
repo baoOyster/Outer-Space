@@ -44,21 +44,21 @@ export function Destination(){
     const { planetname } = useParams();
     const [planet, setPlanet] = useState(planets.moon);
 
-    // console.log(typeof(planetname));
-    
     useEffect(() => {
         setPlanet(planets[planetname]);
     }, [planetname]);
 
     return (
         <div className="mainContent">
-            <div className='leftContent'>
-                <h2><span className='hightLightNum'>01</span>  PICK YOUR DESTINATION</h2>
-                <Planet planet={planet}/>
-            </div>
-            <div className='rightContent'>
-                <PlanetSelector />
-                <PlanetInfo planet={planet}/>
+            <h2><span className='hightLightNum'>01</span>  PICK YOUR DESTINATION</h2>
+            <div className="desContainer">
+                <div className='leftDes'>
+                    <Planet planet={planet}/>
+                </div>
+                <div className='rightDes'>
+                    <PlanetSelector />
+                    <PlanetInfo planet={planet}/>
+                </div>
             </div>
         </div>
     )

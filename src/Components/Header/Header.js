@@ -19,7 +19,7 @@ export function Header() {
                 <NavLink className={({isActive}) => (isActive ? 'active' : 'inactive')} to="/crew">
                     <span className='highLightHeader'>02</span> Crew
                 </NavLink>
-                <NavLink className={({isActive}) => (isActive ? 'active' : 'inactive')} to="/technology">
+                <NavLink className={({isActive}) => (isActive ? 'active' : 'inactive')} to="/tech">
                     <span className='highLightHeader'>03</span> Technology
                 </NavLink>
             </nav>
