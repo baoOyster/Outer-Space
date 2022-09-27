@@ -40,7 +40,7 @@ export function Tech(){
 
     return (
         <div className="mainContent">
-            <h2><span className='hightLightNum'>03</span>  SPACE LAUNCH 101</h2>
+            <h2><span className='highLightNum'>03</span>  SPACE LAUNCH 101</h2>
             <div className="techContainer">
                 <div className="leftTech">
                     <TechSelector />

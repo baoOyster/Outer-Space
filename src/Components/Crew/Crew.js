@@ -46,7 +46,7 @@ export function Crew(){
 
     return (
         <div className='mainContent'>
-            <h2><span className='hightLightNum'>02</span>  MEET YOUR CREW</h2>
+            <h2><span className='highLightNum'>02</span>  MEET YOUR CREW</h2>
             <div className='crewContainer'>
                 <div className='leftCrew'>
                     <CrewInfo crew={crew}/>

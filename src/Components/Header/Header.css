@@ -1,0 +1,108 @@
+:root{
+    --header-height: 80px;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    height: var(--header-height);
+    align-items: center;
+    /* align-content: center; */
+    margin-top: 30px;
+}
+
+.highLightHeader{
+    font-weight: bold;
+}
+/* Left Header */
+.leftHeader{
+    flex: 35%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.hr{
+    height: 1px;
+    flex: 30%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(6%);
+    z-index: 1;
+}
+/* Right Header Desktop */
+.rightHeaderDesktop{
+    flex: 55%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    height: 100%;
+    margin-right: 5%;
+}
+
+.rightHeaderDesktop .inactiveHeader{
+    /* height: 100%; */
+    line-height: var(--header-height);
+}
+
+.rightHeaderDesktop .inactiveHeader:hover{
+    line-height: calc(var(--header-height) - 3px);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.rightHeaderDesktop .activeHeader{
+    line-height: calc(var(--header-height) - 3px) !important;
+    border-bottom: 3px solid #fff !important;
+}
+/* right header mobile */
+.rightHeaderMobile{
+    display: none;
+}
+
+#mobileMenu{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    width: 50%;
+    display: none;
+    flex-direction: column;
+    padding: 1rem 3% 0;
+    z-index: 1;
+}
+
+#mobileMenu img{
+    width: 26px;
+    height: auto;
+    align-self: flex-end;
+    margin-bottom: 32px;
+}
+
+#mobileMenu .activeHeader{
+    text-decoration: underline;
+}
+
+#mobileMenu a{
+    font-size: 1.5rem;
+    padding: 10px 0;
+}
+@media only screen and (max-width: 599px) {
+    .rightHeaderDesktop{
+        display: none;
+    }
+
+    .hr{
+        display: none;
+    }
+
+    .rightHeaderMobile{
+        display: flex;
+        flex: 50%;
+        justify-content: flex-end;
+        margin-right: 5%;
+        height: 40px;
+        width: auto;
+    }
+}

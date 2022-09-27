@@ -50,7 +50,7 @@ export function Destination(){
 
     return (
         <div className="mainContent">
-            <h2><span className='hightLightNum'>01</span>  PICK YOUR DESTINATION</h2>
+            <h2><span className='highLightNum'>01</span>  PICK YOUR DESTINATION</h2>
             <div className="desContainer">
                 <div className='leftDes'>
                     <Planet planet={planet}/>

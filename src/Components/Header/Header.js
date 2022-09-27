@@ -1,7 +1,13 @@
 import './Header.css';
 import Logo from '../../assets/shared/logo.svg';
-import { NavLink } from 'react-router-dom';
+import NavIcon from '../../assets/shared/icon-hamburger.svg';
+import { HeaderSelector } from './HeaderSelector';
+import { MobileNav } from './MobileNav';
 
+function openMobileNav(){
+    const navMobileMenu = document.getElementById('mobileMenu');
+    navMobileMenu.style.display = 'flex';
+}
 export function Header() {
     return (
         <header>
@@ -9,20 +15,15 @@ export function Header() {
                 <img src={Logo} alt="Logo" />
                 <div className="hr"></div>
             </div>
-            <nav className="rightHeader">
-                <NavLink className={({isActive}) => (isActive ? 'active' : 'inactive')} to="">
-                    <span className='highLightHeader'>00</span> Home
-                </NavLink>
-                <NavLink className={({isActive}) => (isActive ? 'active' : 'inactive')} to="/destination">
-                    <span className='highLightHeader'>01</span> Destination
-                </NavLink>
-                <NavLink className={({isActive}) => (isActive ? 'active' : 'inactive')} to="/crew">
-                    <span className='highLightHeader'>02</span> Crew
-                </NavLink>
-                <NavLink className={({isActive}) => (isActive ? 'active' : 'inactive')} to="/tech">
-                    <span className='highLightHeader'>03</span> Technology
-                </NavLink>
+            <nav className="rightHeaderDesktop">
+                <HeaderSelector />
             </nav>
+
+            <nav className='rightHeaderMobile'>
+                <img src={NavIcon} alt="navicon" onClick={openMobileNav}/>
+            </nav>
+
+            <MobileNav />
         </header>
     )
 }

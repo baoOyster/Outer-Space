@@ -1,0 +1,89 @@
+
+.desContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftDes{
+    flex: 55%;
+    justify-content: center;
+}
+
+.rightDes{
+    flex: 30%;
+    margin-right: 15%;
+}
+
+.planetSelector a{
+    font-size: 1.5rem;
+    color: hsl(231, 77%, 90%);
+}
+
+.planetSelector a+a::before{
+    content: "";
+    margin-right: 2rem;
+}
+
+.activePlanet{
+    text-decoration: underline;
+}
+
+.planetInfo h1{
+    font-family: 'Bellefair', serif;
+    margin: 1rem 0;
+}
+
+.planetInfo > p{
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.additionalInfo{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.distanceInfo{
+    margin-right: 2rem;
+}
+
+.distanceInfo, .timeInfo{
+    font-weight: 100;
+}
+
+.distanceInfo p, .timeInfo p{
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .desContainer{
+        text-align: center;
+    }
+
+    .leftDes{
+        flex: 100%;
+        padding: 0 20% 100px;
+    }
+
+    .rightDes{
+        flex: 100%;
+        margin-right: 0;
+
+    }
+
+    .additionalInfo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .leftDes img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 599px){
+    .mainContent {
+        text-align: center;
+    }
+}

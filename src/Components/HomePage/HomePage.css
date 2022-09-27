@@ -1,0 +1,83 @@
+
+:root {
+    --button-square: 260px;
+}
+
+@keyframes shadowSpread {
+    0% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+
+    100% {
+        box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.3);
+    }
+}
+
+@keyframes shadowPersish {
+    0% {
+        box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.3);
+    }
+    
+    100% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+}
+
+.homePageMain{
+    margin-top: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* left */
+.leftHome{
+    flex: 50%;
+    /* padding-left: 10%; */
+}
+
+h2{
+    font-weight: 50;
+}
+
+h1{
+    font-size: 5rem;
+}
+/* right */
+.rightHome{
+    flex: 50%;
+}
+
+.rightHome a{
+    display: block;
+    margin-left: 20%;
+    height: var(--button-square);
+    line-height: var(--button-square);
+    width: var(--button-square);
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .homePageMain{
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    .leftHome{
+        flex: 100%;
+        padding: 0 20% 100px;
+    }
+
+    .rightHome{
+        flex: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .rightHome a{
+        margin-left: 0;
+    }
+}
+
