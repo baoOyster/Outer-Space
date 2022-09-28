@@ -45,11 +45,13 @@ export function Crew(){
     },[crewjob])
 
     return (
-        <div className='mainContent'>
+        <div className='mainContent crewContent'>
             <h2><span className='highLightNum'>02</span>  MEET YOUR CREW</h2>
             <div className='crewContainer'>
                 <div className='leftCrew'>
-                    <CrewInfo crew={crew}/>
+                    <div className='crewInfoContainer'>
+                        <CrewInfo crew={crew}/>
+                    </div>
                     <CrewSelector />
                 </div>
                 <div className='rightCrew'>

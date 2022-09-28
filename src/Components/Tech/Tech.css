@@ -1,0 +1,105 @@
+:root{
+    --tech-button-height: 90px;
+}
+
+.techContainer{
+    display: flex;
+}
+/* left tech */
+.leftTech{
+    flex: 50%;
+    padding-right: 10%;
+    display: flex;
+}
+
+.techSelector a{
+    display: inline-block;
+    height: var(--tech-button-height);
+    width: var(--tech-button-height);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: var(--tech-button-height);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 2rem;
+}
+
+.activeTech{
+    background-color: #fff;
+    color: black;
+}
+
+.inactiveTech{
+    background-color: black;
+}
+
+.techInfo{
+    margin-left: 5rem;
+}
+
+/* right tech */
+.rightTech{
+    flex: 40%;
+    justify-content: flex-end;
+}
+
+.rightTech .techPortraitImage{
+    width: 100%;
+    height: auto;
+    
+}
+
+.techLandscapeImage{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px){
+    .techContent{
+        margin: 0;
+    }
+    
+    .techContainer{
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+    }
+    
+    .leftTech{
+        flex: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .techInfo{
+        margin: 2rem 0;
+        padding: 0 25%;
+    }
+
+    .techSelector{
+        margin-top: 2rem;
+    }
+
+    .techSelector a{
+        margin-right: 1rem;
+    }
+
+    .rightTech{
+        flex: 100%;
+    }
+    
+    .techPortraitImage{
+        display: none;
+    }
+
+    .techLandscapeImage{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    :root{
+        --tech-button-height: 70px;
+    }
+}

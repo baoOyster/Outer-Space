@@ -5,7 +5,7 @@ import { Destination } from '../Destination/Destination';
 import { Header } from '../Header/Header';
 import { Crew } from '../Crew/Crew';
 import { Tech } from '../Tech/Tech';
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 // import background for changing background
 import homePageDesktop from '../../assets/home/background-home-desktop.jpg';
 import homePageTablet from '../../assets/home/background-home-tablet.jpg';
@@ -21,7 +21,7 @@ import techTablet from '../../assets/technology/background-technology-tablet.jpg
 import techMobile from '../../assets/technology/background-technology-mobile.jpg';
 
 const background = {
-  homePage: {
+  home: {
     desktop: homePageDesktop,
     tablet: homePageTablet,
     mobile: homePageMobile
