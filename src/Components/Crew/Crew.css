@@ -87,4 +87,8 @@
         width: 100%;
         height: auto;
     }
+
+    .crewInfo h1 {
+        font-size: 3rem;
+    }
 }
