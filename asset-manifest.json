@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Outer-Space/static/css/main.952bbabd.css",
-    "main.js": "/Outer-Space/static/js/main.3e569a32.js",
+    "main.css": "/Outer-Space/static/css/main.b81e27c2.css",
+    "main.js": "/Outer-Space/static/js/main.3043c294.js",
     "static/js/787.bd4ba37b.chunk.js": "/Outer-Space/static/js/787.bd4ba37b.chunk.js",
     "static/media/image-victor-glover.png": "/Outer-Space/static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
     "static/media/image-anousheh-ansari.png": "/Outer-Space/static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
@@ -33,12 +33,12 @@
     "static/media/logo.svg": "/Outer-Space/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
     "static/media/icon-close.svg": "/Outer-Space/static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
     "static/media/icon-hamburger.svg": "/Outer-Space/static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
-    "main.952bbabd.css.map": "/Outer-Space/static/css/main.952bbabd.css.map",
-    "main.3e569a32.js.map": "/Outer-Space/static/js/main.3e569a32.js.map",
+    "main.b81e27c2.css.map": "/Outer-Space/static/css/main.b81e27c2.css.map",
+    "main.3043c294.js.map": "/Outer-Space/static/js/main.3043c294.js.map",
     "787.bd4ba37b.chunk.js.map": "/Outer-Space/static/js/787.bd4ba37b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.952bbabd.css",
-    "static/js/main.3e569a32.js"
+    "static/css/main.b81e27c2.css",
+    "static/js/main.3043c294.js"
   ]
 }
