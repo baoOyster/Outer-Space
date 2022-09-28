@@ -49,8 +49,8 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Navigate replace to="home" />}/>
-        <Route path="/Outer-Space" element={<Navigate replace to="home" />}/>
+        <Route path="/" element={<Navigate replace to="/home" />}/>
+        <Route path="/Outer-Space" element={<Navigate replace to="/home" />}/>
         <Route path="/home" element={<HomePage />}/>
         <Route path="/destination" element={<Navigate replace to="/destination/moon" />}/>
         <Route path="/destination/:planetname" element={<Destination />}/>
